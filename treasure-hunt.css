@@ -1,0 +1,108 @@
+
+
+
+#game-name{
+  font-size: 70px;
+}
+h3 {
+  font-style: italic;
+}
+html {
+  text-align: center;
+  width: auto;
+}
+
+
+* {
+  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel', serif;
+
+}
+
+
+body {
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4800px;
+  height: 100vh;
+
+}
+#cartoon-box {
+  height: 120px;
+}
+
+#add-line {
+  text-align: center;
+}
+p {
+  border-bottom: 2px;
+}
+#to-center {
+  text-align: center;
+}
+.left-space {
+  height: 150px;
+}
+tr {
+  border-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#outputCounter {
+  margin-bottom: 2px;
+}
+#counter {
+  margin-top: 2px;
+  size: 200px;
+}
+
+
+
+
+#animation {
+  width: 70px;
+  height: 47px;
+  background: #92B901;
+  color: #ffffff;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  animation: animated_div 5s 1;
+  -moz-animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  animation-duration: 5s;
+}
+
+
+}
+/* *{
+  background: url(https://c.pxhere.com/photos/0a/75/beach_clear_sky_footprints_island_landscape_ocean_outdoors_sand-1523313.jpg!d);
+} */
+#table {
+  text-align: center;
+  width: 700px;
+  height: 100px;
+  display: inline-table;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px;
+  border-radius: 4%;
+  border: dashed;
+}
+#restart {
+  padding: 1%;
+  border-style: inset;
+}
+footer {
+  text-align: right;
+}
+]/* body {
+  background: url(https://c.pxhere.com/photos/0a/75/beach_clear_sky_footprints_island_landscape_ocean_outdoors_sand-1523313.jpg!d);
+
+} */

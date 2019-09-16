@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="http://res.publicdomainfiles.com/pdf_view/70/13929484212093.png">
+    <link rel="stylesheet" href="treasure-hunt.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: white " style = 'width: 90%'>
+    <div id = 'to-center'>
+      <div>
+        <h1 id = 'game-name' class = 'w3-center w3-animate-left'><i>Treasure Hunt!</i></h1>
+      </div>
+      <img class = 'w3-center w3-animate-top' id = 'cartoon-box' src="http://res.publicdomainfiles.com/pdf_view/70/13929484212093.png" alt="cartoon treasure" style="width:140px">
+      <h2 class = 'w3-center w3-animate-right'><i>Rules:<i></h2>
+      <p class = 'w3-center w3-animate-right'>#1:  click on the red X</p>
+      <p class = 'w3-center w3-animate-right'>#2:  either you win . . .</p>
+      <p class = 'w3-center w3-animate-right'>#3:  or you lose . . .</p>
+      <br>
+      <div id = 'add-line'>
+        <hr>
+      </div>
+      <br>
+      <input class = 'w3-center w3-animate-left' type="text" name="" value="" id='userName' placeholder='Player Username..'>
+      <button class = 'w3-center w3-animate-left' type="button" name="button" onclick="submit()">I'm Ready!</button>
+      <p id='outputName'></p>
+      <br>
+      <h3 id = 'outputCounter'></h3>
+      <h3 id = 'counter'><i>Counter: 5<i></h3>
+    </div>
+<center>
+  <div id = 'game-board'>
+    <table id = 'table' class = 'w3-center w3-animate-bottom'>
+      <tr>
+        <td id = '0' class = 'left-space' onclick = 'playGame(0)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+        <td id = '1' class = 'left-space' onclick = 'playGame(1)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+        <td id = '2' class = 'left-space' onclick = 'playGame(2)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+      </tr>
+      <tr>
+        <td id = '3' class = 'left-space' onclick = 'playGame(3)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+        <td id = '4' class = 'left-space' onclick = 'playGame(4)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+        <td id = '5' class = 'left-space' onclick = 'playGame(5)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+      </tr>
+      <tr>
+        <td id = '6' class = 'left-space' onclick = 'playGame(6)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+        <td id = '7' class = 'left-space' onclick = 'playGame(7)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+        <td id = '8' class = 'left-space' onclick = 'playGame(8)'><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png" onmouseover= "this.src = 'http://www.pngall.com/wp-content/uploads/2/Question-Mark.png'" onmouseout = "this.src = 'https://upload.wikimedia.org/wikipedia/en/a/a4/Red_x_large.png'" alt="treasure map" style='width: 120px'></td>
+      </tr>
+    </table>
+  </div>
+</center>
+    <br>
+    <br>
+  <center>
+    <button class = 'w3-center w3-animate-bottom' type="button" name="button" onclick = 'location.reload()' id = 'restart'>. .RESTART. .</button>
+  </center>
+    <script type="text/javascript" src="treasure-hunt.js"></script> <!-- used to bring in your javascript from other files -->
+    <footer> . . Created by Kalvin K . . </footer>
+
+  </body>
+</html>
